@@ -1,187 +1,4 @@
-/* Reset & Base */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
-  }
-  
-  body {
-    background-color: #f9fafb;
-    color: #1f2937;
-    line-height: 1.6;
-  }
-  
-  /* Navigation */
-  /* Navigation */
-nav {
-    background-color: #1a237e;
-    padding: 1rem 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: sticky;  /* Make the navbar sticky */
-    top: 0;  /* Stick to the top of the page */
-    z-index: 1000;  /* Ensures navbar stays on top of other content */
-  }
-  
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 600;
-    transition: color 0.3s ease;
-  }
-  
-  nav ul li a:hover {
-    color: #39FF14;
-  }
-  
-  /* Section Titles */
-  section h2 {
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 30px;
-    color: #1e1f43;
-  }
-  
-  .welcome {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
-    background-attachment: fixed;
-    color: white;
-    padding: 120px 20px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 70vh;
-  }
-  
-  
-  .animated-text {
-    font-size: 42px;
-    font-weight: bold;
-    animation: fadeInUp 1s ease-in-out forwards;
-    opacity: 0;
-  }
-  
-  /* Card Container */
-  .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
-    padding: 0 20px;
-  }
-  .career-options {
-    background: rgba(255, 245, 245, 0.4);
-    padding: 80px 20px;
-    color: white;
-    text-align: center;
-  }
-  
-  
-  .card {
-    background: linear-gradient(to bottom right, #e0e7ff, #ddd6fe);
-    border-radius: 16px;
-    padding: 20px;
-    width: 280px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-  }
-  
-  .card h3 {
-    font-size: 20px;
-    color: #1e1f43;
-    margin-bottom: 10px;
-  }
-  
-  .card p {
-    font-size: 14px;
-    color: #4b5563;
-  }
-  
-  /* Exams Section */
-  .exams {
-    background: rgba(255, 245, 245, 0.4);
-    padding: 60px 20px;
-  }zzzz
-  
-  .exams ul {
-    max-width: 800px;
-    margin: 0 auto;
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  
-  .exams li {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  
-  /* Teachers Section */
-  .teachers {
-    padding: 60px 20px;
-    background: zrgba(206, 142, 142, 0.4);
-  }
-  
-  /* YouTube Videos Section */
-  .youtube-videos {
-    background: rgba(222, 214, 214, 0.4);
-    padding: 60px 20px;
-  }
-  
-  .youtube-videos iframe {
-    border-radius: 10px;
-  }
-  
-  .youtube-videos p {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #374151;
-    text-align: center;
-  }
-  
-  /* Animations */
-  @keyframes fadeInUp {
-    0% {
-      opacity: 0;
-      transform: translateY(40px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .card-container {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .card {
-      width: 90%;
-    }
-  
-    .animated-text {
-      font-size: 32px;
-    }
-  }
-  /* Base Reset */
+/* ===== Base Reset ===== */
 * {
     margin: 0;
     padding: 0;
@@ -192,142 +9,17 @@ nav {
   body {
     background-color: #f2f4f8;
     color: #2c3e50;
+    line-height: 1.6;
   }
   
-  /* Navigation */
+  /* ===== Navigation ===== */
   nav {
     background-color: #1a237e;
     padding: 1rem 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: sticky;
-  }
-  
-  nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    gap: 2rem;
-    flex-wrap: wrap;
-  }
-  
-  nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 0.5rem 1rem;
-    transition: background-color 0.3s, border-radius 0.3s;
-  }
-  
-  nav ul li a:hover {
-    background-color: #3949ab;
-    border-radius: 5px;
-  }
-  
-  /* Blog Section */
-  .blog {
-    padding: 3rem 1rem;
-    text-align: center;
-    background-color: #e8eaf6;
-  }
-  
-  .blog h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #1a237e;
-  }
-  
-  .blog p {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-    color: #37474f;
-    max-width: 800px;
-    margin-inline: auto;
-  }
-  
-  /* Grid Layout for Cards */
-  .card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    padding: 1rem;
-  }
-  
-  /* Individual Blog Card */
-  .blog-card {
-    background-color: #ffffff;
-    border-radius: 10px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  }
-  
-  .blog-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  }
-  
-  .blog-card img,
-  .blog-card iframe {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  /* Card Content */
-  .blog-card h3 {
-    padding: 1rem 1rem 0.5rem;
-    font-size: 1.2rem;
-    color: #1a237e;
-  }
-  
-  .blog-card p {
-    padding: 0 1rem 1.5rem;
-    color: #546e7a;
-    font-size: 0.95rem;
-  }
-  
-  /* Responsive iframe styling */
-  .blog-card iframe {
-    border: none;
-  }
-  
-  /* Responsive navigation on small screens */
-  @media (max-width: 768px) {
-    nav ul {
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-    }
-  
-    .blog h1 {
-      font-size: 2rem;
-    }
-  
-    .blog p {
-      font-size: 1rem;
-    }
-  }
-  /* Base Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  body {
-    background-color: #f2f4f8;
-    color: #2c3e50;
-    line-height: 1.6;
-  }
-  
-  /* Navigation */
-  nav {
-    background-color: #1a237e;
-    padding: 1rem 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    top: 0;
+    z-index: 1000;
   }
   
   nav ul {
@@ -352,7 +44,205 @@ nav {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
   }
   
-  /* Contact Form Section */
+  /* ===== Welcome Section ===== */
+  .welcome {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
+    background-attachment: fixed;
+    color: white;
+    padding: 120px 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+  }
+  
+  .animated-text {
+    font-size: 42px;
+    font-weight: bold;
+    animation: fadeInUp 1s ease-in-out forwards;
+    opacity: 0;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* ===== Career Options Section ===== */
+  .career-options {
+    background: rgba(255, 245, 245, 0.4);
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  /* ===== Exams Section ===== */
+  .exams {
+    background: rgba(255, 245, 245, 0.4);
+    padding: 60px 20px;
+  }
+  
+  .exams ul {
+    max-width: 800px;
+    margin: 0 auto;
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .exams li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  /* ===== Teachers Section ===== */
+  .teachers {
+    padding: 60px 20px;
+    background: rgba(234, 235, 250, 0.4);
+  }
+  
+  /* ===== YouTube Videos Section ===== */
+  .youtube-videos {
+    background: rgba(222, 214, 214, 0.4);
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .youtube-videos iframe {
+    border-radius: 10px;
+  }
+  
+  .youtube-videos p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #374151;
+  }
+  
+  /* ===== Blog Section ===== */
+  .blog {
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: #e8eaf6;
+  }
+  
+  .blog h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #1a237e;
+  }
+  
+  .blog p {
+    font-size: 1.1rem;
+    color: #37474f;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+  }
+  
+  /* ===== Blog Cards ===== */
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+  }
+  
+  .blog-card, .card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .blog-card:hover, .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .blog-card img,
+  .blog-card iframe,
+  .card iframe {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: none;
+  }
+  
+  .blog-card h3, .card h3 {
+    padding: 1rem 1rem 0.5rem;
+    font-size: 1.2rem;
+    color: #1a237e;
+  }
+  
+  .blog-card p, .card p {
+    padding: 0 1rem 1.5rem;
+    color: #546e7a;
+    font-size: 0.95rem;
+  }
+  
+  /* ===== About Section ===== */
+  .about {
+    background-color: #ffffff;
+    padding: 80px 20px;
+    text-align: center;
+    color: #2c3e50;
+  }
+  
+  .about h1 {
+    font-size: 2.5rem;
+    color: #1a237e;
+    margin-bottom: 1rem;
+  }
+  
+  .about p {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    font-size: 1.1rem;
+    color: #37474f;
+    line-height: 1.7;
+  }
+  
+  .about .about-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .about-feature-card {
+    background-color: #e8eaf6;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .about-feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-feature-card h3 {
+    color: #1a237e;
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+  }
+  
+  .about-feature-card p {
+    font-size: 0.95rem;
+    color: #455a64;
+  }
+  
+  /* ===== Contact Section ===== */
   .contact {
     background-color: #e8eaf6;
     padding: 3rem 1rem;
@@ -407,7 +297,7 @@ nav {
     background-color: #3949ab;
   }
   
-  /* Helpline Section */
+  /* ===== Helpline Section ===== */
   .helpline {
     padding: 2rem 1rem;
     background-color: #ffffff;
@@ -426,7 +316,7 @@ nav {
     margin: 0.3rem 0;
   }
   
-  /* FAQ Section */
+  /* ===== FAQ Section ===== */
   .faq {
     background-color: #e8eaf6;
     padding: 3rem 1rem;
@@ -439,35 +329,7 @@ nav {
     margin-bottom: 2rem;
   }
   
-  .card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-    padding: 0 1rem;
-  }
-  
-  .card {
-    background-color: #ffffff;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .card h3 {
-    color: #1a237e;
-    margin-bottom: 0.8rem;
-  }
-  
-  .card p {
-    color: #546e7a;
-  }
-  
-  /* Newsletter Section */
+  /* ===== Newsletter Section ===== */
   .newsletter {
     background-color: #1a237e;
     color: #ffffff;
@@ -517,12 +379,16 @@ nav {
     background-color: #5c6bc0;
   }
   
-  /* Responsive Layout */
+  /* ===== Responsive ===== */
   @media (max-width: 768px) {
     nav ul {
       flex-direction: column;
       align-items: center;
       gap: 1rem;
+    }
+  
+    .animated-text {
+      font-size: 32px;
     }
   
     .contact h1,
@@ -535,164 +401,6 @@ nav {
     .contact form,
     .newsletter form {
       padding: 1rem;
-    }
-  }
-  /* ===== Base Reset ===== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  body {
-    background-color: #f2f4f8;
-    color: #2c3e50;
-  }
-  
-  /* ===== Navigation Bar ===== */
-  nav {
-    background-color: #1a237e;
-    padding: 1rem 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    list-style: none;
-    flex-wrap: wrap;
-  }
-  
-  nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 0.5rem 1rem;
-    transition: background-color 0.3s ease, border-radius 0.3s ease;
-  }
-  
-  nav ul li a:hover {
-    background-color: #3949ab;
-    border-radius: 6px;
-  }
-  
-  /* ===== About Section ===== */
-  .about {
-    background-color: #e8eaf6;
-    text-align: center;
-    padding: 3rem 1rem;
-  }
-  
-  .about h1 {
-    font-size: 2.5rem;
-    color: #1a237e;
-    margin-bottom: 1.2rem;
-  }
-  
-  .about p {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 1.1rem;
-    color: #37474f;
-    line-height: 1.6;
-  }
-  
-  /* ===== Challenges Section ===== */
-  .challenges {
-    background-color: #ffffff;
-    padding: 3rem 1rem;
-    text-align: center;
-  }
-  
-  .challenges h2 {
-    font-size: 2rem;
-    color: #1a237e;
-    margin-bottom: 2rem;
-  }
-  
-  .card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1.5rem;
-    padding: 0 1rem;
-  }
-  
-  .card {
-    background-color: #fefefe;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .card h3 {
-    color: #1a237e;
-    margin-bottom: 0.6rem;
-  }
-  
-  .card p {
-    color: #546e7a;
-  }
-  
-  /* ===== Exam Dates Section ===== */
-  .exam-dates {
-    background-color: #e8eaf6;
-    padding: 3rem 1rem;
-    text-align: center;
-  }
-  
-  .exam-dates h2 {
-    font-size: 2rem;
-    color: #1a237e;
-    margin-bottom: 2rem;
-  }
-  
-  .grid-layout {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.5rem;
-    padding: 0 1rem;
-  }
-  
-  .grid-item {
-    background-color: #ffffff;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-  }
-  
-  .grid-item h3 {
-    color: #1a237e;
-    margin-bottom: 0.5rem;
-  }
-  
-  .grid-item p {
-    color: #37474f;
-  }
-  
-  /* ===== Responsive Design ===== */
-  @media (max-width: 768px) {
-    nav ul {
-      flex-direction: column;
-      gap: 1rem;
-    }
-  
-    .about h1,
-    .challenges h2,
-    .exam-dates h2 {
-      font-size: 1.8rem;
-    }
-  
-    .card-container,
-    .grid-layout {
-      grid-template-columns: 1fr;
     }
   }
   
